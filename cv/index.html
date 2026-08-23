@@ -1,1 +1,708 @@
-<meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1QwGwLtvhFz5xvsEtPuu3sFUD4pf5P1sD/view?usp=drive_link">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prashant Verma, Senior Data Scientist</title>
+<meta name="description" content="Prashant Verma, Senior Data Scientist in London. Data science for Coca-Cola, Unilever, NBCUniversal, BT and EE. Machine learning, GenAI and data engineering across media, healthcare, education and finance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,0..100,0..1&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --cream:#FAF6EC;
+  --cream-2:#F4EEDF;
+  --indigo:#21395E;
+  --indigo-2:#3A5581;
+  --indigo-pale:#96A6BE;
+  --olive:#4F6B2E;
+  --olive-2:#6E8B45;
+  --marigold:#E8981C;
+  --marigold-2:#C9800F;
+  --ink:#25292F;
+  --muted:#6B6F78;
+  --rule:#DDD3BD;
+  --rule-2:#CEC2A6;
+}
+
+html{scroll-behavior:smooth}
+body{
+  background:var(--cream);
+  color:var(--ink);
+  font-family:'Karla',system-ui,sans-serif;
+  font-size:16px;
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+::selection{background:#F7E3BE;color:var(--indigo)}
+
+h1,h2,h3,.serif{
+  font-family:'Fraunces',Georgia,serif;
+  font-variation-settings:'SOFT' 20,'WONK' 0;
+  font-optical-sizing:auto;
+  font-weight:600;
+  line-height:1.18;
+  letter-spacing:-.008em;
+}
+
+/* ══════════ HORIZONTAL FRIEZE ══════════ */
+.frieze{width:100%;height:46px;overflow:hidden;pointer-events:none}
+.frieze svg{width:100%;height:46px;display:block}
+.frieze-b{transform:scaleY(-1)}
+
+/* ══════════ PAGE / SIDEBAR ══════════ */
+.page{display:flex;max-width:1104px;margin:0 auto;padding:0 26px}
+
+.sidebar{
+  width:252px;flex-shrink:0;
+  position:sticky;top:0;align-self:flex-start;height:100vh;
+  padding:54px 30px 38px 0;
+  display:flex;flex-direction:column;
+}
+.sb-crest{
+  position:relative;width:46px;height:46px;
+  border:1px solid var(--indigo);
+  display:grid;place-items:center;color:var(--indigo);
+  margin:0 0 1.3rem 6px;
+}
+.sb-crest::after{content:'';position:absolute;inset:-5px;border:1px solid var(--marigold)}
+.sb-crest svg{width:26px;height:26px}
+.sb-name{
+  font-family:'Fraunces',Georgia,serif;
+  font-variation-settings:'SOFT' 20,'WONK' 0;
+  font-weight:600;font-size:1.2rem;line-height:1.25;
+  color:var(--indigo);letter-spacing:-.012em;
+}
+.sb-role{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);font-weight:700;margin-top:.45rem}
+.sb-loc{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:.28rem}
+
+.sb-nav{display:flex;flex-direction:column;margin-top:2.3rem;border-left:1px solid var(--rule-2)}
+.sb-nav a{
+  font-size:.685rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;
+  color:var(--indigo-2);padding:.46rem 0 .46rem 1.05rem;
+  margin-left:-1px;border-left:2px solid transparent;transition:.15s;
+}
+.sb-nav a:hover{color:var(--olive)}
+.sb-nav a.on{color:var(--indigo);border-left-color:var(--marigold)}
+
+.sb-links{margin-top:auto;padding-top:2rem;display:flex;flex-direction:column;gap:.55rem;align-items:flex-start}
+.sb-links a{
+  font-size:.645rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+  color:var(--muted);border-bottom:1px solid transparent;padding-bottom:1px;transition:.15s;
+}
+.sb-links a:hover{color:var(--olive);border-bottom-color:var(--olive)}
+.sb-links .sb-res{color:var(--indigo);border-bottom-color:var(--rule-2)}
+
+.content{flex:1;min-width:0;max-width:800px;border-left:1px solid var(--rule);padding:54px 0 0 46px}
+
+/* ══════════ MASTHEAD ══════════ */
+.masthead{position:relative;border:1.5px solid var(--marigold);padding:7px;margin-bottom:64px}
+.masthead-inner{position:relative;border:1px solid var(--indigo);padding:52px 38px 46px;overflow:hidden}
+.jaali{position:absolute;inset:0;width:100%;height:100%;opacity:.075;pointer-events:none;color:var(--indigo)}
+.masthead-content{position:relative;z-index:2}
+
+.crest{
+  position:absolute;top:-24px;left:44px;
+  width:54px;height:50px;background:var(--cream);
+  display:grid;place-items:center;z-index:3;color:var(--indigo);
+}
+.crest svg{width:30px;height:30px}
+
+.corner{position:absolute;width:22px;height:22px;color:var(--indigo);opacity:.6;z-index:3}
+.corner svg{width:100%;height:100%}
+.c-tr{top:8px;right:8px;transform:scaleX(-1)}
+.c-bl{bottom:8px;left:8px;transform:scaleY(-1)}
+.c-br{bottom:8px;right:8px;transform:scale(-1,-1)}
+
+.eyebrow{font-size:.65rem;letter-spacing:.26em;text-transform:uppercase;color:var(--indigo-2);font-weight:700}
+.name{
+  font-family:'Fraunces',Georgia,serif;
+  font-variation-settings:'SOFT' 20,'WONK' 0;
+  font-weight:600;
+  font-size:clamp(2.4rem,7vw,3.7rem);
+  letter-spacing:-.018em;color:var(--indigo);
+  margin:.42rem 0 .5rem;line-height:1.02;
+}
+.role{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ink)}
+.tagline{font-size:1.02rem;color:var(--muted);max-width:54ch;margin-top:1.35rem;line-height:1.68}
+
+/* ══════════ SECTION HEADERS ══════════ */
+section{padding-bottom:64px}
+section:last-of-type{padding-bottom:24px}
+.shead{display:flex;align-items:center;gap:13px;margin-bottom:2.1rem}
+.shead::before{
+  content:'';width:8px;height:8px;flex-shrink:0;
+  background:var(--marigold);transform:rotate(45deg);
+}
+.shead .r{flex:1;height:1px;background:var(--rule-2)}
+.shead-txt{
+  font-size:.71rem;letter-spacing:.2em;text-transform:uppercase;
+  font-weight:700;color:var(--indigo);
+}
+
+/* ══════════ ABOUT ══════════ */
+.prose p{font-size:1.02rem;line-height:1.85;color:#3C414B;margin-bottom:1.1rem;max-width:66ch}
+.prose p:last-child{margin-bottom:0}
+.prose strong{color:var(--indigo);font-weight:600}
+.lead{
+  font-family:'Fraunces',Georgia,serif !important;
+  font-variation-settings:'SOFT' 20,'WONK' 0;
+  font-weight:500;
+  font-size:1.42rem !important;line-height:1.5 !important;
+  color:var(--indigo) !important;letter-spacing:-.008em;max-width:47ch !important;
+}
+
+/* ══════════ EXPERIENCE ══════════ */
+.job{padding:28px 0;border-top:1px solid var(--rule)}
+.job:first-of-type{border-top:none;padding-top:0}
+.job-when{font-size:.67rem;letter-spacing:.16em;text-transform:uppercase;color:var(--olive);font-weight:700;margin-bottom:.4rem}
+.job-role{font-size:1.46rem;color:var(--indigo)}
+.job-co{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-top:.25rem}
+.job-clients{font-size:.83rem;color:var(--muted);margin-top:.2rem;margin-bottom:.9rem}
+.job p{font-size:.96rem;line-height:1.8;color:#3C414B;margin-bottom:.9rem;max-width:64ch}
+.job strong{color:var(--indigo);font-weight:600}
+
+ul.pts{list-style:none}
+ul.pts li{position:relative;padding-left:1.5rem;font-size:.94rem;line-height:1.78;color:#3C414B;margin-bottom:.55rem;max-width:64ch}
+ul.pts li:last-child{margin-bottom:0}
+ul.pts li::before{
+  content:'';position:absolute;left:1px;top:.64em;
+  width:7px;height:7px;border:1.3px solid var(--olive);transform:rotate(45deg);
+}
+ul.pts li strong{color:var(--indigo);font-weight:600}
+
+.stack{margin-top:1rem;font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;color:var(--olive);font-weight:700}
+
+/* ══════════ WORK ══════════ */
+.work-line{font-size:1.02rem;line-height:1.8;color:#3C414B;max-width:64ch}
+.work-line a{color:var(--indigo);font-weight:600;border-bottom:1px solid var(--indigo-pale);padding-bottom:1px}
+.work-line a:hover{color:var(--olive);border-bottom-color:var(--olive)}
+
+/* ══════════ BEYOND ══════════ */
+.beyond{padding:19px 0;border-top:1px solid var(--rule);display:flex;gap:1.05rem}
+.beyond:first-of-type{border-top:none;padding-top:0}
+.beyond-glyph{width:18px;flex-shrink:0;color:var(--olive);padding-top:5px;opacity:.85}
+.beyond-glyph svg{width:18px;height:22px;display:block}
+.beyond-t{font-size:.84rem;font-weight:700;letter-spacing:.05em;color:var(--indigo);margin-bottom:.2rem;text-transform:uppercase}
+.beyond-d{font-size:.94rem;line-height:1.75;color:#3C414B;max-width:62ch}
+
+/* ══════════ SKILLS ══════════ */
+.skill{display:grid;grid-template-columns:200px 1fr;gap:1.6rem;padding:14px 0;border-top:1px solid var(--rule)}
+.skill:first-of-type{border-top:none;padding-top:0}
+.skill-k{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--indigo);padding-top:.2rem}
+.skill-v{font-size:.93rem;line-height:1.8;color:#3C414B}
+
+/* ══════════ EDUCATION ══════════ */
+.edu{padding:19px 0;border-top:1px solid var(--rule)}
+.edu:first-of-type{border-top:none;padding-top:0}
+.edu-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.edu-t{font-family:'Fraunces',Georgia,serif;font-variation-settings:'SOFT' 20,'WONK' 0;font-weight:600;font-size:1.22rem;color:var(--indigo)}
+.edu-y{font-size:.67rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;white-space:nowrap}
+.edu-s{font-size:.91rem;color:#3C414B;margin-top:.1rem}
+.edu-g{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--olive);font-weight:700;margin-top:.35rem}
+.certs{margin-top:26px;border:1px solid var(--rule-2);background:var(--cream-2);padding:22px 26px}
+.certs-h{font-size:.67rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--indigo);margin-bottom:.85rem}
+.certs ul{list-style:none}
+.certs li{position:relative;padding-left:1.45rem;font-size:.92rem;line-height:1.72;color:#3C414B;margin-bottom:.4rem}
+.certs li:last-child{margin-bottom:0}
+.certs li::before{content:'';position:absolute;left:2px;top:.6em;width:6px;height:6px;background:var(--marigold);transform:rotate(45deg);opacity:1}
+
+/* ══════════ CONTACT ══════════ */
+.contact-intro{
+  font-family:'Fraunces',Georgia,serif;font-variation-settings:'SOFT' 20,'WONK' 0;font-weight:500;
+  font-size:1.22rem;line-height:1.55;color:var(--indigo);max-width:40ch;margin-bottom:1.9rem;
+}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 2.4rem}
+.cx{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.85rem 0;border-top:1px solid var(--rule);font-size:.89rem}
+.cx-k{font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.cx-v{color:var(--indigo);font-weight:600;text-align:right;overflow-wrap:anywhere}
+.cx:hover .cx-v{text-decoration:underline;text-underline-offset:3px}
+
+/* ══════════ FOOTER ══════════ */
+.ganesh{margin-top:44px}
+.ganesh svg{width:68px;height:64px;display:block;color:var(--indigo)}
+footer{margin-top:18px;padding:20px 0 44px;border-top:1.5px solid var(--indigo)}
+footer p{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+footer a{border-bottom:1px solid var(--rule-2);padding-bottom:1px}
+footer a:hover{color:var(--olive);border-bottom-color:var(--olive)}
+
+/* ══════════ RESPONSIVE ══════════ */
+@media(max-width:1040px){
+  .page{max-width:960px}
+  .sidebar{width:214px;padding-right:24px}
+  .content{padding-left:36px}
+}
+@media(max-width:900px){
+  .page{flex-direction:column;max-width:760px;padding:0 22px}
+  .sidebar{display:block;width:auto;position:static;height:auto;padding:30px 0 0}
+  .sb-id{display:none}
+  .sb-nav{
+    flex-direction:row;flex-wrap:wrap;gap:0 1.45rem;margin-top:0;
+    border-left:none;border-bottom:1px solid var(--rule-2);
+  }
+  .sb-nav a{
+    padding:.32rem 0;margin-left:0;margin-bottom:-1px;
+    border-left:none;border-bottom:2px solid transparent;
+  }
+  .sb-nav a.on{border-left-color:transparent;border-bottom-color:var(--marigold)}
+  .sb-links{margin-top:1.25rem;padding-top:0;flex-direction:row;flex-wrap:wrap;gap:.5rem 1.35rem}
+  .content{border-left:none;max-width:none;padding:32px 0 0}
+}
+@media(max-width:640px){
+  .frieze,.frieze svg{height:34px}
+}
+@media(max-width:640px){
+  body{font-size:15.5px}
+  .page{padding:0 18px}
+  .sidebar{padding-top:22px}
+  .masthead{margin-bottom:46px}
+  .masthead-inner{padding:44px 20px 30px}
+  .crest{left:24px}
+  .tagline{font-size:.97rem}
+  .lead{font-size:1.2rem !important;max-width:none !important}
+  .skill{grid-template-columns:1fr;gap:.25rem}
+  .contact-grid{grid-template-columns:1fr;gap:0}
+  section{padding-bottom:48px}
+  .certs{padding:20px 18px}
+  .shead-txt{font-size:.63rem;letter-spacing:.14em}
+  .contact-intro{font-size:1.1rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════ ORNAMENT DEFINITIONS ══════════════ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+
+    <symbol id="star" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+        <path d="M24 3.5 44.5 24 24 44.5 3.5 24Z"/>
+        <path d="M9.6 9.6h28.8v28.8H9.6Z"/>
+        <path d="M24 12.4 35.6 24 24 35.6 12.4 24Z" stroke-width="1.1" stroke-opacity=".55"/>
+        <circle cx="24" cy="24" r="3.4" fill="#E8981C" stroke="none"/>
+      </g>
+    </symbol>
+
+    <symbol id="rosette" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+        <path d="M24 24C21 17.5 20.5 11 24 5c3.5 6 3 12.5 0 19Z"/>
+        <path d="M24 24C21 17.5 20.5 11 24 5c3.5 6 3 12.5 0 19Z" transform="rotate(45 24 24)"/>
+        <path d="M24 24C21 17.5 20.5 11 24 5c3.5 6 3 12.5 0 19Z" transform="rotate(90 24 24)"/>
+        <path d="M24 24C21 17.5 20.5 11 24 5c3.5 6 3 12.5 0 19Z" transform="rotate(135 24 24)"/>
+        <path d="M24 24C21 17.5 20.5 11 24 5c3.5 6 3 12.5 0 19Z" transform="rotate(180 24 24)"/>
+        <path d="M24 24C21 17.5 20.5 11 24 5c3.5 6 3 12.5 0 19Z" transform="rotate(225 24 24)"/>
+        <path d="M24 24C21 17.5 20.5 11 24 5c3.5 6 3 12.5 0 19Z" transform="rotate(270 24 24)"/>
+        <path d="M24 24C21 17.5 20.5 11 24 5c3.5 6 3 12.5 0 19Z" transform="rotate(315 24 24)"/>
+        <circle cx="24" cy="24" r="4.4" fill="currentColor" fill-opacity=".22"/>
+      </g>
+    </symbol>
+
+    <symbol id="lotus" viewBox="0 0 34 22">
+      <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round">
+        <path d="M17 20c-1.4-4.6-1-9.4 0-13.6 1 4.2 1.4 9 0 13.6Z"/>
+        <path d="M17 20c-3.8-.8-7.6-3.6-9.4-7.6 4 .4 7.8 3.2 9.4 7.6Z"/>
+        <path d="M17 20c3.8-.8 7.6-3.6 9.4-7.6-4 .4-7.8 3.2-9.4 7.6Z"/>
+      </g>
+    </symbol>
+
+    <symbol id="cornerleaf" viewBox="0 0 30 30">
+      <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+        <path d="M1 1c0 15 6 22 20 24"/>
+        <path d="M4 8c4.6-.6 7.8 1.6 8.6 6-4.4 1-7.6-1.2-8.6-6Z"/>
+        <path d="M11 17c4-1.8 7.6-.6 9.4 3.2-4 1.8-7.6.6-9.4-3.2Z"/>
+        <circle cx="2.6" cy="2.6" r="1.6" fill="currentColor" fill-opacity=".3"/>
+      </g>
+    </symbol>
+
+    <symbol id="arch" viewBox="0 0 34 42">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+        <path d="M4 41V21c0-5 3.4-5.6 5-9 1.6-3.4 4.4-3.6 8-8.4 3.6 4.8 6.4 5 8 8.4 1.6 3.4 5 4 5 9v20"/>
+        <path d="M4 41h26"/>
+      </g>
+    </symbol>
+
+    <!-- Ganesha, single-weight line art -->
+    <symbol id="ganesha" viewBox="0 0 68 64">
+      <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <!-- finial and crown (mukut) -->
+        <circle cx="34" cy="3.2" r="1.7" fill="currentColor" stroke="none"/>
+        <path d="M26 16c0-7.5 3.6-11.2 8-11.2S42 8.5 42 16"/>
+        <path d="M24.6 16h18.8"/>
+        <!-- head -->
+        <path d="M24.8 16c-1.2 4-1.4 8-.2 11.4 1.8 4.6 5.4 7 9.4 7s7.6-2.4 9.4-7c1.2-3.4 1-7.4-.2-11.4"/>
+        <!-- ears -->
+        <path d="M25 18.4c-7.5-4-14.6-1-16.4 6-1.8 7.2 3 14 11 13.6 2.2-.1 3.8-.8 4.8-2"/>
+        <path d="M23.2 21.6c-5.4-1-9.2 1.4-10 6.2"/>
+        <path d="M43 18.4c7.5-4 14.6-1 16.4 6 1.8 7.2-3 14-11 13.6-2.2-.1-3.8-.8-4.8-2"/>
+        <path d="M44.8 21.6c5.4-1 9.2 1.4 10 6.2"/>
+        <!-- eyes -->
+        <circle cx="29.6" cy="24" r="1.3" fill="currentColor" stroke="none"/>
+        <circle cx="38.4" cy="24" r="1.3" fill="currentColor" stroke="none"/>
+        <!-- tusks -->
+        <path d="M29.4 34.6c-.8 3.2-2.2 5.2-4.4 6.6"/>
+        <path d="M38.6 34.6c.8 3.2 2.2 5.2 4.4 6.6"/>
+        <!-- trunk -->
+        <path d="M34 34.4c0 5.6-1 8.6-3 11.2-2.6 3.4-1.1 7.1 2 7.1 2.2 0 3.5-1.5 3.3-3.3"/>
+        <!-- lotus seat -->
+        <path d="M34 54.4c-3.6 4.4-9.2 6.6-14.6 5.7 1.8-4.7 7.2-7.4 14.6-7.4s12.8 2.7 14.6 7.4c-5.4.9-11-1.3-14.6-5.7Z" stroke="#E8981C" fill="#E8981C" fill-opacity=".2"/>
+        <path d="M19.4 60.1c-4.8-.7-8.4-3.1-9.8-6.7 4.8-1.2 9-.3 11.4 3.4" stroke="#E8981C"/>
+        <path d="M48.6 60.1c4.8-.7 8.4-3.1 9.8-6.7-4.8-1.2-9-.3-11.4 3.4" stroke="#E8981C"/>
+      </g>
+    </symbol>
+
+    <!-- jaali lattice (masthead texture) -->
+    <pattern id="jaali" width="34" height="34" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#21395E" stroke-width="1">
+        <path d="M17 0 34 17 17 34 0 17Z"/>
+        <circle cx="17" cy="17" r="4.5"/>
+      </g>
+    </pattern>
+
+    <!-- arcade frieze: marigold flowering in each arched niche -->
+    <pattern id="frieze" width="88" height="46" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- ruled edges -->
+        <path d="M-2 3.4H90" stroke="#21395E" stroke-width="1.9"/>
+        <path d="M-2 8H90"   stroke="#E8981C" stroke-width="1.2"/>
+        <path d="M-2 42.6H90" stroke="#21395E" stroke-width="1.9"/>
+        <path d="M-2 38H90"  stroke="#E8981C" stroke-width="1.2"/>
+        <!-- cusped arcade -->
+        <path d="M0 36V25c0-7.6 7-11.6 14.6-8.6C20 10.6 30 8 44 8s24 2.6 29.4 8.4C81 13.4 88 17.4 88 25v11"
+              stroke="#21395E" stroke-width="1.6"/>
+        <path d="M5 36V25.6c0-4.8 4.4-7.4 9.6-5.2C19 15.6 29 13.4 44 13.4s25 2.2 29.4 7c5.2-2.2 9.6.4 9.6 5.2V36"
+              stroke="#6E8B45" stroke-width="1" stroke-opacity=".8"/>
+        <!-- piers, drawn at both tile edges so the seam joins -->
+        <path d="M0 30V37.6" stroke="#21395E" stroke-width="1.9"/>
+        <path d="M88 30V37.6" stroke="#21395E" stroke-width="1.9"/>
+        <!-- flowering plant seated in the niche -->
+        <g transform="translate(44,0)">
+          <path d="M0 36V24" stroke="#6E8B45" stroke-width="1.15"/>
+          <path d="M0 34c-5.4-.4-8.2-3.4-8.4-8.8 5.4.4 8.2 3.4 8.4 8.8Z" stroke="#6E8B45" stroke-width="1"/>
+          <path d="M0 34c5.4-.4 8.2-3.4 8.4-8.8-5.4.4-8.2 3.4-8.4 8.8Z" stroke="#6E8B45" stroke-width="1"/>
+          <path d="M0 28.5c-4.4-1.2-6.6-4-6.4-8.4 4.4 1.2 6.6 4 6.4 8.4Z" stroke="#6E8B45" stroke-width="1"/>
+          <path d="M0 28.5c4.4-1.2 6.6-4 6.4-8.4-4.4 1.2-6.6 4-6.4 8.4Z" stroke="#6E8B45" stroke-width="1"/>
+          <g transform="translate(0,19)">
+            <path d="M4.5 0A1.85 1.85 0 0 1 3.18 3.18 1.85 1.85 0 0 1 0 4.5 1.85 1.85 0 0 1-3.18 3.18 1.85 1.85 0 0 1-4.5 0 1.85 1.85 0 0 1-3.18-3.18 1.85 1.85 0 0 1 0-4.5 1.85 1.85 0 0 1 3.18-3.18 1.85 1.85 0 0 1 4.5 0Z"
+                  fill="#E8981C" fill-opacity=".3" stroke="#E8981C" stroke-width="1.05"/>
+            <circle cx="0" cy="0" r="1.6" fill="#C9800F" stroke="none"/>
+          </g>
+        </g>
+        <!-- buds in the spandrels -->
+        <circle cx="22" cy="40.3" r="1.4" fill="#6E8B45" fill-opacity=".75"/>
+        <circle cx="66" cy="40.3" r="1.4" fill="#6E8B45" fill-opacity=".75"/>
+      </g>
+    </pattern>
+
+  </defs>
+</svg>
+
+<div class="frieze" aria-hidden="true"><svg><rect width="100%" height="100%" fill="url(#frieze)"/></svg></div>
+
+<div class="page">
+
+  <!-- ══════════════ SIDEBAR ══════════════ -->
+  <aside class="sidebar">
+    <div class="sb-id">
+      <div class="sb-crest"><svg viewBox="0 0 48 48"><use href="#star"/></svg></div>
+      <div class="sb-name">Prashant<br>Verma</div>
+      <div class="sb-role">Senior Data Scientist</div>
+      <div class="sb-loc">London, UK</div>
+    </div>
+
+    <nav class="sb-nav">
+      <a class="on" href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Selected work</a>
+      <a href="#beyond">Beyond</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="sb-links">
+      <a href="mailto:prashant2798.pv@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/prashantvermaa" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Prashantvermapv" target="_blank" rel="noopener">GitHub</a>
+      <a class="sb-res" href="https://drive.google.com/file/d/1RV49fVIUnyiu4KvgZ_evz-Sg7XkoLZ3u/view?usp=sharing" target="_blank" rel="noopener">Résumé ↗</a>
+    </div>
+  </aside>
+
+  <main class="content">
+
+  <!-- ══════════════ MASTHEAD ══════════════ -->
+  <header class="masthead">
+    <div class="crest"><svg><use href="#star"/></svg></div>
+    <div class="masthead-inner">
+      <svg class="jaali" preserveAspectRatio="none"><rect width="100%" height="100%" fill="url(#jaali)"/></svg>
+
+      <div class="masthead-content">
+        <div class="eyebrow">London, United Kingdom</div>
+        <h1 class="name">Prashant Verma</h1>
+        <div class="role">Senior Data Scientist</div>
+        <p class="tagline">Data science for Coca-Cola, Unilever, NBCUniversal, BT and EE. I take ideas from a rough first sketch all the way to production.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════ 01 ABOUT ══════════════ -->
+  <section id="about">
+    <div class="shead">
+      <span class="shead-txt">About</span>
+      <i class="r"></i>
+    </div>
+    <div class="prose">
+      <p class="lead">Five years of taking ideas from a rough sketch to something running in production at global scale.</p>
+      <p>I've worked across media, telecoms, FMCG, healthcare, education and finance, usually as the person pulling together data science, engineering, marketing and ops teams and keeping them pointed in the same direction. Right now I'm a <strong>Senior Data Scientist and Project Lead at WPP Media</strong>, working with clients like Coca-Cola, Unilever, NBCUniversal and BT.</p>
+      <p>I enjoy solving business problems with a bit of creative thinking. Sometimes that means building a model, sometimes it's building the right tool, and sometimes it's just having the right conversation with the right person. I get as much satisfaction from the technical build as I do from reading a room and working out what a client genuinely needs.</p>
+      <p>Increasingly the work is less about writing the models myself and more about <strong>setting direction, mentoring the people who do, and translating all of it into decisions non-technical leaders can act on</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════ 02 EXPERIENCE ══════════════ -->
+  <section id="experience">
+    <div class="shead">
+      <span class="shead-txt">Experience</span>
+      <i class="r"></i>
+    </div>
+
+    <article class="job">
+      <div class="job-when">Since 2024 · London</div>
+      <h3 class="job-role">Senior Data Scientist, Project Lead</h3>
+      <div class="job-co">WPP Media</div>
+      <div class="job-clients">Coca-Cola · Unilever · NBCUniversal · BT · EE · Welcome Break</div>
+      <p>I lead projects across roughly <strong>25 cross-functional stakeholders</strong> spanning data engineering, data science, marketing and MLOps, taking solutions from ideation to production.</p>
+      <ul class="pts">
+        <li>Architected <strong>CLV prediction and audience optimisation</strong> models powering Google Ads bidding and cross-sell campaigns, delivering a <strong>20% POAS uplift</strong> with lower acquisition costs across broadband and mobile.</li>
+        <li>Built and automated a media mix response model spanning <strong>23,500 brand-markets across 117 countries</strong>, used by Unilever markets to plan annual media budgets.</li>
+        <li>Drove geo-spatial audience strategy and measurement (DiD, Causal Impact) for <strong>Coca-Cola's FIFA World Cup campaign</strong> across 20 markets, and contributed KNN statistical matching to WPP's Open Intelligence data fusion platform.</li>
+        <li>Engineered a <strong>multi-agent GenAI system</strong> with BigQuery function calling, a GenAI layer turning MMM outputs into monthly effectiveness reports for EE, and finance report automation at NBCUniversal.</li>
+        <li>Built ETL pipelines processing <strong>30M BT and EE customers</strong> plus real-time value-based bidding with sGTM, Firestore and Vertex AI. Designed EE Marketplace's taxonomy and recommendation engine, saving <strong>1 FTE</strong>.</li>
+      </ul>
+      <div class="stack">BigQuery · Terraform · Airflow · Vertex AI · Firestore · GenAI / LLM · MLOps · CI/CD</div>
+    </article>
+
+    <article class="job">
+      <div class="job-when">2023 to 2024</div>
+      <h3 class="job-role">Data Scientist</h3>
+      <div class="job-co">Twinkl Ltd</div>
+      <p>Worked alongside merchandising, marketing and finance on the commercial side of a global education business.</p>
+      <ul class="pts">
+        <li>Customer segmentation, cohort analysis, lifetime value and A/B testing that delivered <strong>£348K in revenue growth</strong>.</li>
+        <li>A reproducible Prophet forecasting model predicting subscriptions and revenue at <strong>roughly 85% accuracy</strong>, feeding quarterly budget allocation.</li>
+        <li>SpaCy language models detecting approximately <strong>28,000 spelling errors across 10 languages</strong>.</li>
+        <li>A customer journey strategy built from behavioural patterns that lifted retention <strong>10%</strong> by preventing cancellations and driving upgrades.</li>
+      </ul>
+      <div class="stack">BigQuery (GA4) · MySQL · Tableau · Looker Studio · Prophet · SpaCy</div>
+    </article>
+
+    <article class="job">
+      <div class="job-when">2022</div>
+      <h3 class="job-role">Data Scientist</h3>
+      <div class="job-co">Moorfields Eye Hospital</div>
+      <p>Clinical NLP research, working directly with ophthalmologists to make free-text patient notes machine-readable.</p>
+      <ul class="pts">
+        <li>Compared RNN, LSTM and BERT for entity recognition in a hospital setting, a <strong>30% accuracy improvement</strong> over traditional methods.</li>
+        <li>Ran named entity recognition and relation classification across <strong>5 million patient records</strong> to surface ocular health insights.</li>
+        <li>Partnered with clinicians to label 6,000 clinical letters, and shipped the tooling as React and Django web applications.</li>
+      </ul>
+      <div class="stack">BERT · LSTM · NLP / NER · Label-Studio · React · Django</div>
+    </article>
+
+    <article class="job">
+      <div class="job-when">2021 · Gurugram</div>
+      <h3 class="job-role">Data Scientist</h3>
+      <div class="job-co">Sutra Tech Labs</div>
+      <p>My first data role, and the one where I learned to lead a team rather than just contribute to one.</p>
+      <ul class="pts">
+        <li>SQL querying and wrangling to identify popular keywords and integrate hashtags into news feed content, lifting content relevancy and user satisfaction by <strong>30%</strong>.</li>
+        <li>Managed marketing and design teams on data-driven outreach, a <strong>25% increase in user engagement</strong>.</li>
+        <li>Directed a 6-member team building an AI-powered <strong>virtual police station</strong> for the Government Police of India, delivered in six months and benefiting <strong>82.3 million people</strong>.</li>
+      </ul>
+      <div class="stack">SQL · Python · Django · Machine Learning · NLP</div>
+    </article>
+  </section>
+
+  <!-- ══════════════ 03 WORK ══════════════ -->
+  <section id="work">
+    <div class="shead">
+      <span class="shead-txt">Selected work</span>
+      <i class="r"></i>
+    </div>
+    <p class="work-line">Machine learning, NLP and full-stack projects, including work with the Madhya Pradesh Police and India's Ministry of AYUSH, live on <a href="https://github.com/Prashantvermapv" target="_blank" rel="noopener">github.com/Prashantvermapv</a></p>
+  </section>
+
+  <!-- ══════════════ 04 BEYOND ══════════════ -->
+  <section id="beyond">
+    <div class="shead">
+      <span class="shead-txt">Beyond the day job</span>
+      <i class="r"></i>
+    </div>
+
+    <div class="beyond">
+      <div class="beyond-glyph"><svg viewBox="0 0 34 42"><use href="#arch"/></svg></div>
+      <div>
+        <div class="beyond-t">Co-Chair and Community Manager, WPP Unite</div>
+        <div class="beyond-d">Leading employee resource group initiatives and managing a team to deliver inclusive culture programmes across WPP Media.</div>
+      </div>
+    </div>
+
+    <div class="beyond">
+      <div class="beyond-glyph"><svg viewBox="0 0 34 42"><use href="#arch"/></svg></div>
+      <div>
+        <div class="beyond-t">Senior Postgraduate Teaching Assistant, UCL</div>
+        <div class="beyond-d">Supervised, led practical sessions and graded 400+ business undergraduates across database systems, web technologies, Java and Python.</div>
+      </div>
+    </div>
+
+    <div class="beyond">
+      <div class="beyond-glyph"><svg viewBox="0 0 34 42"><use href="#arch"/></svg></div>
+      <div>
+        <div class="beyond-t">Data science volunteer, DataKind and SEAPIA</div>
+        <div class="beyond-d">Monthly volunteering with 3+ social change organisations, building their data capability and confidence in data-driven decisions.</div>
+      </div>
+    </div>
+
+    <div class="beyond">
+      <div class="beyond-glyph"><svg viewBox="0 0 34 42"><use href="#arch"/></svg></div>
+      <div>
+        <div class="beyond-t">Research assistant, UCL and UoW</div>
+        <div class="beyond-d">Developed two machine learning models for healthcare in university research labs.</div>
+      </div>
+    </div>
+
+    <div class="beyond">
+      <div class="beyond-glyph"><svg viewBox="0 0 34 42"><use href="#arch"/></svg></div>
+      <div>
+        <div class="beyond-t">Hackathon wins</div>
+        <div class="beyond-d">1st prize (₹100K) for VCop, beating 132 teams and 792 participants in 2021. 1st prize (₹50K) for VAIDYA, in partnership with the Ministry of AYUSH.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ 05 SKILLS ══════════════ -->
+  <section id="skills">
+    <div class="shead">
+      <span class="shead-txt">Skills and tools</span>
+      <i class="r"></i>
+    </div>
+
+    <div class="skill">
+      <div class="skill-k">Python</div>
+      <div class="skill-v">Pandas, Polars, NumPy, scikit-learn, TensorFlow, PyTorch, Keras, PySpark</div>
+    </div>
+    <div class="skill">
+      <div class="skill-k">NLP and Generative AI</div>
+      <div class="skill-v">BERT and Transformers, SpaCy, NLTK, HuggingFace, LLMs, Gemini, Claude, multi-agent systems</div>
+    </div>
+    <div class="skill">
+      <div class="skill-k">Cloud and data engineering</div>
+      <div class="skill-v">Google Cloud, BigQuery, Terraform, Airflow, Vertex AI, Firestore, sGTM, CI/CD, AWS, Azure Databricks</div>
+    </div>
+    <div class="skill">
+      <div class="skill-k">Databases</div>
+      <div class="skill-v">MySQL, BigQuery, PostgreSQL, Neo4j, MongoDB</div>
+    </div>
+    <div class="skill">
+      <div class="skill-k">Visualisation and BI</div>
+      <div class="skill-v">Tableau, Looker Studio, Power BI, Matplotlib, Seaborn, Plotly</div>
+    </div>
+    <div class="skill">
+      <div class="skill-k">Web</div>
+      <div class="skill-v">React, Django, Flask, JavaScript, HTML/CSS</div>
+    </div>
+    <div class="skill">
+      <div class="skill-k">Ways of working</div>
+      <div class="skill-v">Stakeholder management, project leadership, mentoring, experimentation and A/B testing, causal inference, agile delivery</div>
+    </div>
+  </section>
+
+  <!-- ══════════════ 06 EDUCATION ══════════════ -->
+  <section id="education">
+    <div class="shead">
+      <span class="shead-txt">Education and certifications</span>
+      <i class="r"></i>
+    </div>
+
+    <div class="edu">
+      <div class="edu-top">
+        <div class="edu-t">MSc Data Science and Health</div>
+        <div class="edu-y">2022</div>
+      </div>
+      <div class="edu-s">University College London</div>
+      <div class="edu-g">Distinction</div>
+    </div>
+
+    <div class="edu">
+      <div class="edu-top">
+        <div class="edu-t">B.Tech Computer Science</div>
+        <div class="edu-y">2021</div>
+      </div>
+      <div class="edu-s">Maharaja Agrasen Institute of Technology</div>
+      <div class="edu-g">9.3 / 10</div>
+    </div>
+
+    <div class="certs">
+      <div class="certs-h">Professional certifications</div>
+      <ul>
+        <li>Google Cloud Certified: Professional Machine Learning Engineer</li>
+        <li>Google Cloud Certified: Professional Data Engineer</li>
+        <li>Google Marketing: Analytics, Ads Search, Social Media Marketing, Media Planning, Activation, AdOps and Media Investment</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══════════════ 07 CONTACT ══════════════ -->
+  <section id="contact">
+    <div class="shead">
+      <span class="shead-txt">Contact</span>
+      <i class="r"></i>
+    </div>
+
+    <p class="contact-intro">Always happy to talk data strategy, GenAI in practice, or how marketing can be a bit cleverer.</p>
+
+    <div class="contact-grid">
+      <a class="cx" href="mailto:prashant2798.pv@gmail.com">
+        <span class="cx-k">Email</span><span class="cx-v">prashant2798.pv@gmail.com</span>
+      </a>
+      <a class="cx" href="https://linkedin.com/in/prashantvermaa" target="_blank" rel="noopener">
+        <span class="cx-k">LinkedIn</span><span class="cx-v">/in/prashantvermaa</span>
+      </a>
+      <a class="cx" href="https://github.com/Prashantvermapv" target="_blank" rel="noopener">
+        <span class="cx-k">GitHub</span><span class="cx-v">Prashantvermapv</span>
+      </a>
+      <a class="cx" href="https://drive.google.com/file/d/1QwGwLtvhFz5xvsEtPuu3sFUD4pf5P1sD/view?usp=drive_link" target="_blank" rel="noopener">
+        <span class="cx-k">Résumé</span><span class="cx-v">Download ↗</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="ganesh" aria-hidden="true"><svg viewBox="0 0 68 64"><use href="#ganesha"/></svg></div>
+
+  <footer>
+    <p>Prashant Verma · London · <a href="https://prashantverma.co.uk">prashantverma.co.uk</a></p>
+  </footer>
+
+  </main>
+</div>
+
+<div class="frieze frieze-b" aria-hidden="true"><svg><rect width="100%" height="100%" fill="url(#frieze)"/></svg></div>
+
+<script>
+const links = document.querySelectorAll('.sb-nav a');
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(a => a.classList.remove('on'));
+      const m = document.querySelector('.sb-nav a[href="#' + e.target.id + '"]');
+      if (m) m.classList.add('on');
+    }
+  });
+}, { rootMargin: '-25% 0px -65% 0px' });
+document.querySelectorAll('section[id]').forEach(s => io.observe(s));
+</script>
+</body>
+</html>
